@@ -54,10 +54,10 @@
     <main>
         <!-- Page Intro -->
         <section class="page-hero">
-            <p class="section-kicker">Contact</p>
-            <h1>Request a quote or start a coverage conversation.</h1>
+            <p class="section-kicker">Request a Quote</p>
+            <h1>Tell us what you need to insure and we will help you take the next step.</h1>
             <p>
-                This page is the main destination for quote requests and general inquiries. Use the form below or contact the agency directly.
+                Use this page to request a quote, ask a coverage question, or start a review of your current insurance. Once we hear from you, we can follow up and gather the details needed to move things forward.
             </p>
         </section>
 
@@ -67,14 +67,15 @@
                 <div class="section-header">
                     <h2>Contact information</h2>
                 </div>
-                <!-- TODO: Confirm agency contact details, hours, and preferred contact method -->
+                <!-- TODO: Confirm agency phone number, email, hours, and preferred contact instructions -->
                 <p><strong>Phone:</strong> (000) 000-0000</p>
                 <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Locations:</strong> Bellevue, Sandusky, Norwalk, and Willard</p>
                 <p><strong>Hours:</strong> Monday to Friday, 8:00 AM to 5:00 PM</p>
-                <p><strong>Service Area:</strong> Bellevue, Sandusky, Norwalk, Willard, and nearby North Central Ohio communities</p>
+                <p><strong>What happens next:</strong> We review your request, follow up if more information is needed, and help you compare the right coverage options.</p>
             </section>
 
-            <section class="page-section form-panel">
+            <section id="quote-form" class="page-section form-panel">
                 <div class="section-header">
                     <h2>Quote / contact form</h2>
                 </div>
@@ -102,16 +103,32 @@
                             <option>Business Insurance</option>
                             <option>Farm Insurance</option>
                             <option>Health Insurance</option>
-                            <option>Watercraft Insurance</option>
+                            <option>ATV / UTV</option>
+                            <option>Boats / Watercraft</option>
+                            <option>Campers / RVs</option>
+                            <option>Motorcycles</option>
+                            <option>Specialty / Collector Vehicles</option>
                         </select>
                     </label>
                     <label>
                         <span>Message</span>
-                        <textarea name="message" rows="6" placeholder="Tell us what you need help with."></textarea>
+                        <textarea name="message" rows="6" placeholder="Tell us what you need covered or what you would like reviewed."></textarea>
                     </label>
                     <button type="submit" class="quote-btn">Send Request</button>
                 </form>
             </section>
+        </section>
+
+        <!-- CTA -->
+        <section class="page-section cta-section">
+            <div class="cta-copy">
+                <p class="section-kicker">Need to Talk First?</p>
+                <h2>Call or email the agency if you would rather start with a conversation.</h2>
+                <p>Some requests are easier to explain directly. Use the contact information above if you prefer to speak with someone before filling out details.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="#quote-form" class="secondary-btn">Go to the Form</a>
+            </div>
         </section>
     </main>
 
@@ -123,7 +140,7 @@
                 <p>Independent insurance guidance for North Central Ohio.</p>
             </div>
             <div class="footer-section">
-                <h4>Site Links</h4>
+                <h4>Quick Links</h4>
                 <p><a href="index.html">Home</a></p>
                 <p><a href="about.html">About</a></p>
                 <p><a href="services.html">Services</a></p>
@@ -131,16 +148,16 @@
             </div>
             <div class="footer-section">
                 <h4>Contact</h4>
-                <!-- TODO: Confirm final agency phone number and email -->
+                <!-- TODO: Confirm final agency phone number, email, and mailing details -->
                 <p>(000) 000-0000</p>
                 <p>info@example.com</p>
-                <p>Bellevue, Sandusky, Norwalk, and Willard</p>
+                <p>Serving Bellevue, Sandusky, Norwalk, and Willard</p>
             </div>
             <div class="footer-section">
                 <h4>Client Tools</h4>
-                <!-- TODO: Add confirmed bill pay and client portal URLs -->
-                <p><a href="contact.html">Client Portal Coming Soon</a></p>
-                <p><a href="contact.html">Online Bill Pay Coming Soon</a></p>
+                <!-- TODO: Add confirmed client portal and online bill pay URLs -->
+                <p class="footer-placeholder">Client portal link pending confirmation</p>
+                <p class="footer-placeholder">Online bill pay link pending confirmation</p>
             </div>
         </div>
     </footer>

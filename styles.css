@@ -1,7 +1,6 @@
 :root {
     --background: #ffffff;
     --surface: #f8f9fb;
-    --surface-alt: #f3f4f6;
     --text: #1f2937;
     --muted: #6b7280;
     --border: #e5e7eb;
@@ -9,10 +8,10 @@
     --primary: #c62828;
     --primary-dark: #a61f1f;
     --footer-dark: #111827;
-    --shadow-soft: 0 10px 26px rgba(17, 24, 39, 0.06);
-    --shadow-card: 0 16px 34px rgba(17, 24, 39, 0.08);
-    --radius-lg: 20px;
-    --radius-md: 16px;
+    --shadow-soft: 0 8px 24px rgba(17, 24, 39, 0.06);
+    --shadow-card: 0 14px 30px rgba(17, 24, 39, 0.08);
+    --radius-lg: 18px;
+    --radius-md: 14px;
     --content-width: 1120px;
     --font-sans: Inter, Arial, Helvetica, sans-serif;
 }
@@ -65,12 +64,12 @@ footer {
 }
 
 main {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 }
 
 /* Header and nav */
 .site-header {
-    padding-top: 16px;
+    padding-top: 14px;
 }
 
 .site-nav {
@@ -84,7 +83,7 @@ main {
     justify-content: space-between;
     padding: 12px 18px;
     position: sticky;
-    top: 12px;
+    top: 10px;
     z-index: 20;
 }
 
@@ -98,7 +97,8 @@ main {
 
 .logo-tag,
 .badge,
-.section-kicker {
+.section-kicker,
+.card-eyebrow {
     color: var(--primary);
     font-size: 0.72rem;
     font-weight: 700;
@@ -140,7 +140,7 @@ main {
 .nav-links a[aria-current="page"]::after {
     background: var(--primary);
     border-radius: 999px;
-    bottom: -8px;
+    bottom: -7px;
     content: "";
     height: 3px;
     left: 0;
@@ -149,12 +149,10 @@ main {
 }
 
 .nav-actions {
-    align-items: center;
     display: flex;
-    gap: 10px;
 }
 
-/* Buttons and links */
+/* Buttons and text links */
 .quote-btn,
 .secondary-btn {
     align-items: center;
@@ -172,6 +170,7 @@ main {
 
 .quote-btn {
     background: var(--primary);
+    border: 0;
     box-shadow: 0 10px 20px rgba(198, 40, 40, 0.16);
     color: #ffffff;
 }
@@ -197,112 +196,57 @@ main {
     font-size: 0.92rem;
     font-weight: 700;
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .text-link:hover {
     color: var(--primary-dark);
 }
 
-/* Home hero */
+/* Hero and intro */
 .hero {
     align-items: stretch;
     display: grid;
     gap: 16px;
-    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.9fr);
-    padding: 18px 0 12px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.9fr);
+    padding: 16px 0 10px;
 }
 
 .hero-content,
 .hero-panel,
-.page-section,
 .page-hero,
+.page-section,
 .contact-info-panel,
 .form-panel {
     background: #ffffff;
     border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
 }
 
 .hero-content,
 .hero-panel,
-.page-section,
 .page-hero,
+.page-section,
 .contact-info-panel,
 .form-panel {
-    border-radius: var(--radius-lg);
-}
-
-.hero-content {
-    padding: 28px;
+    padding: 24px;
 }
 
 .hero h1,
 .page-hero h1 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-size: clamp(1.95rem, 4vw, 3.05rem);
     font-weight: 800;
     letter-spacing: -0.035em;
     line-height: 1.06;
 }
 
 .hero h1 {
-    margin: 10px 0 14px;
+    margin: 8px 0 12px;
     max-width: 12ch;
 }
 
-.hero-text,
-.page-hero p,
-.page-section p,
-.info-card p,
-.service-card p,
-.location-card p,
-.contact-info-panel p,
-.footer-section p,
-.footer-section a,
-.detail-line,
-.bullet-list li {
-    color: var(--muted);
-}
-
-.hero-text {
-    max-width: 58ch;
-}
-
-.hero-buttons,
-.cta-actions {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    margin-top: 18px;
-}
-
-.hero-panel {
-    padding: 24px;
-}
-
-.hero-panel h2 {
-    font-size: 1.2rem;
-    font-weight: 800;
-    line-height: 1.25;
-    margin-bottom: 14px;
-}
-
-.bullet-list {
-    display: grid;
-    gap: 12px;
-    list-style: none;
-}
-
-.bullet-list li {
-    border-top: 1px solid var(--border);
-    font-size: 0.95rem;
-    padding-top: 12px;
-}
-
-/* Page intro */
 .page-hero {
-    margin-top: 18px;
-    padding: 28px;
+    margin-top: 16px;
 }
 
 .page-hero h1 {
@@ -310,14 +254,61 @@ main {
 }
 
 .page-hero p:last-of-type {
-    margin-top: 14px;
+    margin-top: 12px;
+    max-width: 66ch;
+}
+
+.hero-text,
+.page-hero p,
+.page-section > p,
+.info-card p,
+.service-card p,
+.location-card p,
+.contact-info-panel p,
+.footer-section p,
+.footer-section a,
+.detail-line,
+.bullet-list li,
+.cta-copy p:last-child {
+    color: var(--muted);
+}
+
+.hero-text,
+.page-section > p,
+.cta-copy p:last-child {
     max-width: 64ch;
 }
 
-/* Shared section */
-.page-section {
+.hero-buttons,
+.cta-actions {
+    align-items: center;
+    display: flex;
+    gap: 10px;
     margin-top: 16px;
-    padding: 24px;
+}
+
+.hero-panel h2 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.bullet-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+.bullet-list li {
+    border-top: 1px solid var(--border);
+    font-size: 0.95rem;
+    padding-top: 10px;
+}
+
+/* Sections */
+.page-section {
+    margin-top: 14px;
 }
 
 .section-header {
@@ -333,29 +324,24 @@ main {
 
 .section-header h2,
 .cta-copy h2 {
-    font-size: clamp(1.45rem, 2.5vw, 2rem);
+    font-size: clamp(1.35rem, 2.4vw, 1.95rem);
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.15;
 }
 
 .section-header h2 {
-    margin-top: 6px;
-    max-width: 22ch;
+    margin-top: 5px;
+    max-width: 24ch;
 }
 
-.page-section > p,
-.cta-copy p:last-child {
-    max-width: 68ch;
-}
-
-/* Grid systems */
+/* Grids and cards */
 .feature-grid,
 .services-grid,
 .locations-grid,
 .footer-content {
     display: grid;
-    gap: 14px;
+    gap: 12px;
 }
 
 .feature-grid {
@@ -384,15 +370,16 @@ main {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
-    padding: 16px;
+    padding: 15px;
 }
 
 .info-card h3,
 .service-card h3,
 .location-card h3 {
     color: var(--text);
-    font-size: 1rem;
+    font-size: 0.99rem;
     font-weight: 800;
+    line-height: 1.25;
     margin-bottom: 6px;
 }
 
@@ -400,24 +387,81 @@ main {
 .service-card p,
 .location-card p,
 .detail-line {
-    font-size: 0.94rem;
+    font-size: 0.93rem;
+}
+
+.card-eyebrow {
+    margin-bottom: 6px;
 }
 
 .detail-line {
     margin-top: 8px;
 }
 
-/* Split and CTA */
 .split-layout {
     display: grid;
-    gap: 16px;
+    gap: 14px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+/* Carrier marquee */
+.carrier-section {
+    overflow: hidden;
+}
+
+.carrier-marquee {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrier-track {
+    align-items: center;
+    animation: carrier-scroll 34s linear infinite;
+    display: flex;
+    gap: 12px;
+    width: max-content;
+}
+
+.carrier-marquee:hover .carrier-track {
+    animation-play-state: paused;
+}
+
+.carrier-logo {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex: 0 0 auto;
+    height: 64px;
+    justify-content: center;
+    min-width: 188px;
+    padding: 10px 16px;
+}
+
+.carrier-logo img {
+    filter: grayscale(1) opacity(0.82);
+    height: 34px;
+    object-fit: contain;
+    width: auto;
+}
+
+@keyframes carrier-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* CTA */
 .cta-section {
     align-items: center;
     display: flex;
-    gap: 20px;
+    gap: 18px;
     justify-content: space-between;
 }
 
@@ -437,14 +481,9 @@ main {
 /* Contact page */
 .contact-layout {
     display: grid;
-    gap: 16px;
-    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
-    margin-top: 16px;
-}
-
-.contact-info-panel,
-.form-panel {
-    padding: 24px;
+    gap: 14px;
+    grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+    margin-top: 14px;
 }
 
 .contact-info-panel p + p {
@@ -453,7 +492,7 @@ main {
 
 .contact-form {
     display: grid;
-    gap: 14px;
+    gap: 12px;
 }
 
 .contact-form label {
@@ -475,13 +514,13 @@ main {
     border: 1px solid var(--border);
     border-radius: 12px;
     color: var(--text);
-    min-height: 46px;
-    padding: 12px 14px;
+    min-height: 44px;
+    padding: 11px 13px;
     width: 100%;
 }
 
 .contact-form textarea {
-    min-height: 136px;
+    min-height: 128px;
     resize: vertical;
 }
 
@@ -494,19 +533,17 @@ main {
 }
 
 .contact-form button {
-    border: 0;
     cursor: pointer;
-    display: inline-flex;
     width: fit-content;
 }
 
 /* Footer */
 footer {
     background: var(--footer-dark);
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin-top: 16px;
-    padding: 22px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    margin-top: 14px;
+    padding: 20px;
 }
 
 .footer-content {
@@ -516,13 +553,14 @@ footer {
 .footer-section h3,
 .footer-section h4 {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.98rem;
     font-weight: 800;
     margin-bottom: 8px;
 }
 
 .footer-section p,
-.footer-section a {
+.footer-section a,
+.footer-placeholder {
     font-size: 0.92rem;
     text-decoration: none;
 }
@@ -559,15 +597,9 @@ footer {
         display: grid;
     }
 
-    .feature-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
+    .feature-grid,
     .services-grid,
-    .services-grid-full {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+    .services-grid-full,
     .locations-grid,
     .locations-grid-full {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -596,13 +628,8 @@ footer {
         padding-right: 16px;
     }
 
-    .site-nav {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-
     .nav-links {
-        gap: 14px 18px;
+        gap: 12px 16px;
     }
 
     .hero h1,
@@ -636,5 +663,9 @@ footer {
     .section-header-row {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .carrier-logo {
+        min-width: 150px;
     }
 }
