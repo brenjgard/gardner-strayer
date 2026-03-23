@@ -21,7 +21,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardner &amp; Strayer Insurance Group</title>
+    <title>Gardner &amp; Strayer Insurance Group | Home</title>
     <meta
         name="description"
         content="Gardner &amp; Strayer Insurance Group provides trusted local insurance guidance for individuals, families, farms, and businesses across North Central Ohio."
@@ -29,193 +29,186 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Site Header -->
     <header class="site-header">
         <nav class="site-nav" aria-label="Primary">
-            <a class="brand" href="#home">
-                <span class="brand-kicker">North Central Ohio</span>
-                <span class="brand-name">Gardner &amp; Strayer Insurance Group</span>
+            <a class="logo" href="index.html">
+                <span class="logo-tag">North Central Ohio</span>
+                <span class="logo-name">Gardner &amp; Strayer Insurance Group</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#locations">Locations</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
-                <!-- TODO: Confirm client portal URL -->
-                <a href="#contact" class="text-link">Client Portal</a>
-                <!-- TODO: Confirm online bill pay URL -->
-                <a href="#contact" class="text-link">Pay Bill</a>
-                <!-- TODO: Confirm quote request URL or hosted form -->
-                <a href="#contact" class="btn btn-primary">Request a Quote</a>
+                <a href="contact.html" class="quote-btn">Request a Quote</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Independent insurance guidance, close to home</p>
-                <h1>Trusted local insurance guidance for individuals, families, farms, and businesses in North Central Ohio.</h1>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="badge">Independent guidance for North Central Ohio</p>
+                <h1>Trusted local insurance for families, farms, and businesses.</h1>
                 <p class="hero-text">
-                    Gardner &amp; Strayer helps you sort through coverage options with practical advice, responsive service, and policies built around the way you actually live and work.
+                    Gardner &amp; Strayer helps clients make practical coverage decisions with local service, clear advice, and long-term support.
                 </p>
-                <div class="hero-actions">
-                    <!-- TODO: Confirm quote request URL or hosted form -->
-                    <a href="#contact" class="btn btn-primary">Start a Quote</a>
-                    <a href="#services" class="btn btn-secondary">See Coverage Options</a>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="quote-btn">Request a Quote</a>
+                    <a href="services.html" class="secondary-btn">Explore Services</a>
                 </div>
             </div>
 
             <aside class="hero-panel" aria-label="Agency highlights">
-                <h2>Why local clients stay with Gardner &amp; Strayer</h2>
-                <ul class="check-list">
-                    <li>Independent guidance focused on fit, not one carrier</li>
-                    <li>Support for personal, farm, and commercial insurance needs</li>
-                    <li>Local offices serving communities across North Central Ohio</li>
+                <h2>Why local clients call us first</h2>
+                <ul class="bullet-list">
+                    <li>Independent recommendations based on fit, not one carrier</li>
+                    <li>Support for personal, commercial, agricultural, and specialty coverage</li>
+                    <li>Local service across Bellevue, Sandusky, Norwalk, and Willard</li>
                 </ul>
             </aside>
         </section>
 
-        <section class="highlights" aria-label="Agency highlights">
-            <article>
-                <strong>Personal attention</strong>
-                <p>Work with a local team that knows your name and follows through.</p>
-            </article>
-            <article>
-                <strong>Coverage that fits</strong>
-                <p>Compare options for home, auto, farm, life, and business protection.</p>
-            </article>
-            <article>
-                <strong>Local reach</strong>
-                <p>Serving Bellevue, Sandusky, Norwalk, Willard, and nearby communities.</p>
-            </article>
-        </section>
-
-        <section id="about" class="content-section">
-            <div class="section-heading">
-                <p class="eyebrow">About</p>
-                <h2>Personal service backed by independent guidance.</h2>
+        <!-- Why Us -->
+        <section class="page-section">
+            <div class="section-header">
+                <p class="section-kicker">Why Gardner &amp; Strayer</p>
+                <h2>A local agency built around practical advice and dependable service.</h2>
             </div>
-            <p class="section-copy">
-                As an independent agency, Gardner &amp; Strayer helps clients make confident insurance decisions without forcing them into one-size-fits-all coverage. We take the time to understand your property, vehicles, farm operation, family needs, or business exposures, then guide you toward practical protection and dependable long-term service.
-            </p>
+            <div class="feature-grid">
+                <article class="info-card">
+                    <h3>Personal Service</h3>
+                    <p>Work with a local team that knows your household, your business, and your community.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Independent Guidance</h3>
+                    <p>Compare options with an agency focused on coverage fit, value, and long-term protection.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Responsive Support</h3>
+                    <p>Get help when policies change, questions come up, or claims need attention.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="services" class="content-section">
-            <div class="section-heading">
-                <p class="eyebrow">Services</p>
-                <h2>Coverage for everyday life, major assets, and growing operations.</h2>
+        <!-- Services Preview -->
+        <section class="page-section">
+            <div class="section-header section-header-row">
+                <div>
+                    <p class="section-kicker">Services</p>
+                    <h2>Coverage for everyday needs and complex risks.</h2>
+                </div>
+                <a href="services.html" class="text-link">View all services</a>
             </div>
             <div class="services-grid">
                 <article class="service-card">
                     <h3>Auto Insurance</h3>
-                    <p>Protection for personal vehicles, teen drivers, and multi-car households.</p>
+                    <p>Protection for drivers, vehicles, and multi-policy households.</p>
                 </article>
                 <article class="service-card">
                     <h3>Homeowners Insurance</h3>
-                    <p>Coverage for homes, belongings, liability exposure, and property improvements.</p>
+                    <p>Coverage for homes, property, liability, and major life changes.</p>
                 </article>
                 <article class="service-card">
                     <h3>Farm Insurance</h3>
-                    <p>Support for farm dwellings, equipment, outbuildings, and agricultural liability.</p>
+                    <p>Practical coverage for farm property, equipment, and liability exposures.</p>
                 </article>
                 <article class="service-card">
                     <h3>Business Insurance</h3>
-                    <p>Policies for local businesses, contractors, offices, retail, and service operations.</p>
+                    <p>Policies for offices, contractors, retail, and local service businesses.</p>
                 </article>
                 <article class="service-card">
                     <h3>Life Insurance</h3>
-                    <p>Options to help protect your family, income, and long-term financial goals.</p>
+                    <p>Options that help protect family plans, income, and long-term goals.</p>
                 </article>
                 <article class="service-card">
-                    <h3>Umbrella Coverage</h3>
-                    <p>Additional liability protection when your home, auto, or business limits need reinforcement.</p>
-                </article>
-                <article class="service-card">
-                    <h3>Recreation &amp; Specialty Policies</h3>
-                    <p>Coverage for motorcycles, boats, RVs, seasonal properties, and other specialty risks.</p>
+                    <h3>Health Insurance</h3>
+                    <p>Guidance for individuals, families, and coverage questions that affect daily life.</p>
                 </article>
             </div>
         </section>
 
-        <section id="locations" class="content-section locations-section">
-            <div class="section-heading">
-                <p class="eyebrow">Locations</p>
-                <h2>Serving clients across North Central Ohio.</h2>
+        <!-- Locations Preview -->
+        <section class="page-section">
+            <div class="section-header section-header-row">
+                <div>
+                    <p class="section-kicker">Locations</p>
+                    <h2>Serving North Central Ohio with local reach.</h2>
+                </div>
+                <a href="locations.html" class="text-link">See all locations</a>
             </div>
-            <p class="section-copy">
-                Our agency serves clients through offices and relationships connected to Bellevue, Sandusky, Norwalk, and Willard, making it easier to work with a team that understands the communities, properties, farms, and businesses in this part of Ohio.
-            </p>
-            <div class="location-list" role="list" aria-label="Office locations">
-                <article class="location-card" role="listitem">
+            <div class="locations-grid">
+                <article class="location-card">
                     <h3>Bellevue</h3>
-                    <!-- TODO: Confirm Bellevue office address and phone number -->
-                    <p>Local support for families, property owners, and small businesses.</p>
+                    <p>Support for households, property owners, and small business clients.</p>
                 </article>
-                <article class="location-card" role="listitem">
+                <article class="location-card">
                     <h3>Sandusky</h3>
-                    <!-- TODO: Confirm Sandusky office address and phone number -->
-                    <p>Coverage guidance for homeowners, seasonal property needs, and business risks.</p>
+                    <p>Coverage guidance for homeowners, business risks, and seasonal needs.</p>
                 </article>
-                <article class="location-card" role="listitem">
+                <article class="location-card">
                     <h3>Norwalk</h3>
-                    <!-- TODO: Confirm Norwalk office address and phone number -->
-                    <p>Responsive insurance help for households, farms, and commercial accounts.</p>
+                    <p>Responsive local service for family, farm, and commercial accounts.</p>
                 </article>
-                <article class="location-card" role="listitem">
+                <article class="location-card">
                     <h3>Willard</h3>
-                    <!-- TODO: Confirm Willard office address and phone number -->
-                    <p>Local service for agricultural operations, drivers, and growing businesses.</p>
+                    <p>Insurance help for agricultural operations, drivers, and local employers.</p>
                 </article>
             </div>
         </section>
 
-        <section id="contact" class="content-section contact-section">
-            <div class="section-heading">
-                <p class="eyebrow">Contact</p>
-                <h2>Request a quote or talk through your coverage with a local advisor.</h2>
+        <!-- CTA -->
+        <section class="page-section cta-section">
+            <div class="cta-copy">
+                <p class="section-kicker">Request a Quote</p>
+                <h2>Talk through your coverage with a local advisor.</h2>
+                <p>
+                    If you need a quote, a second opinion, or a clearer understanding of your current policies, the contact page is the right next step.
+                </p>
             </div>
-            <p class="section-copy">
-                If you want a second opinion on your current policies or need coverage for something new, our team can help you review options and build a plan that makes sense.
-            </p>
-            <div class="contact-actions">
-                <!-- TODO: Confirm quote request URL or form destination -->
-                <a href="#contact" class="btn btn-primary">Request Your Quote</a>
-                <!-- TODO: Confirm primary agency phone number -->
-                <a href="tel:+1-000-000-0000" class="btn btn-secondary">Call the Agency</a>
-            </div>
-            <div class="contact-details">
-                <!-- TODO: Confirm main phone number -->
-                <p><strong>Phone:</strong> (000) 000-0000</p>
-                <!-- TODO: Confirm general contact email -->
-                <p><strong>Email:</strong> info@example.com</p>
-                <!-- TODO: Confirm office hours -->
-                <p><strong>Hours:</strong> Monday through Friday, 8:00 AM to 5:00 PM</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="quote-btn">Go to Contact &amp; Quote</a>
+                <a href="about.html" class="secondary-btn">Learn About the Agency</a>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <!-- Site Footer -->
+    <footer>
         <div class="footer-content">
-            <div>
-                <h2>Gardner &amp; Strayer Insurance Group</h2>
+            <div class="footer-section">
+                <h3>Gardner &amp; Strayer Insurance Group</h3>
                 <p>Independent insurance guidance for North Central Ohio.</p>
             </div>
-            <div>
-                <p><a href="#about">About</a></p>
-                <p><a href="#services">Services</a></p>
-                <p><a href="#locations">Locations</a></p>
-                <p><a href="#contact">Contact</a></p>
+
+            <div class="footer-section">
+                <h4>Site Links</h4>
+                <p><a href="about.html">About</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="locations.html">Locations</a></p>
+                <p><a href="contact.html">Contact</a></p>
             </div>
-            <div>
-                <!-- TODO: Confirm final footer contact details -->
-                <p>Bellevue, Sandusky, Norwalk, and Willard</p>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <!-- TODO: Confirm final agency phone number and email -->
                 <p>(000) 000-0000</p>
                 <p>info@example.com</p>
+                <p>Bellevue, Sandusky, Norwalk, and Willard</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Client Tools</h4>
+                <!-- TODO: Add confirmed bill pay and client portal URLs -->
+                <p><a href="contact.html">Client Portal Coming Soon</a></p>
+                <p><a href="contact.html">Online Bill Pay Coming Soon</a></p>
             </div>
         </div>
     </footer>
